@@ -1,0 +1,19 @@
+name: THCGeneral
+main: com.insyg.thcplug.Main
+version: 0.1
+commands:
+   luna:
+      description: Luna is pretty cool IMO.
+      usage: /<command>
+   thc:
+      description: Main command for the THC General Plugin.
+      usage: /<command> help
+   fwtoggle:
+      description: Toggle whether or not arrows explode into fireworks.
+      usage: /<command>
+   testhc:
+      description: Luna is too lazy to remove this.
+      usage: /<command> 
+   anal:
+      description: I mean, if you're that desperate...
+      usage: /<command>
