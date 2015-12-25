@@ -1,0 +1,70 @@
+package com.insyg.thcplug;
+
+import org.bukkit.ChatColor;
+import org.bukkit.Color;
+import org.bukkit.FireworkEffect.Type;
+
+public class Functions {
+	
+	public static String altColor(String s) {
+		String newS = ChatColor.translateAlternateColorCodes('&', s);
+		return newS;
+	}
+	
+	public static Color randColor() {
+		int rand = (int) Math.floor(Math.random() * 17);
+		Color color = null;
+		if (rand == 0) {
+			color = Color.AQUA;
+		} else if (rand == 1) {
+			color = Color.BLACK;
+		} else if (rand == 2) {
+			color = Color.BLUE;
+		} else if (rand == 3) {
+			color = Color.FUCHSIA;
+		} else if (rand == 4) {
+			color = Color.GRAY;
+		} else if (rand == 5) {
+			color = Color.GREEN;
+		} else if (rand == 6) {
+			color = Color.LIME;
+		} else if (rand == 7) {
+			color = Color.MAROON;
+		} else if (rand == 8) {
+			color = Color.NAVY;
+		} else if (rand == 9) {
+			color = Color.OLIVE;
+		} else if (rand == 10) {
+			color = Color.ORANGE;
+		} else if (rand == 12) {
+			color = Color.PURPLE;
+		} else if (rand == 13) {
+			color = Color.RED;
+		} else if (rand == 14) {
+			color = Color.SILVER;
+		} else if (rand == 15) {
+			color = Color.TEAL;
+		} else if (rand == 16) {
+			color = Color.WHITE;
+		} else {
+			color = Color.YELLOW;
+		}
+		return color;
+	}
+	
+	public static Type randFWType() {
+		int rand = (int) Math.floor(Math.random() * 4);
+		Type fwtype = null;
+		if (rand == 0) {
+			fwtype = Type.BALL;
+		} else if (rand == 1) {
+			fwtype = Type.BALL_LARGE;
+		} else if (rand == 2) {
+			fwtype = Type.BURST;
+		} else {
+			fwtype = Type.STAR;
+		}
+		return fwtype;
+	}
+	
+}
